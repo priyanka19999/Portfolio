@@ -1,0 +1,108 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* Unified Professional Theme: Sober, Calm, High-End Dark Architecture */
+  :root {
+    --theme-primary: #ffffff;
+    --theme-secondary: #94a3b8;
+    --theme-glow: rgba(255, 255, 255, 0.08);
+    --theme-gradient: linear-gradient(135deg, #ffffff 0%, #f1f5f9 45%, #94a3b8 100%);
+    --theme-btn-gradient: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+    --theme-pill-gradient: linear-gradient(135deg, rgba(255, 255, 255, 0.12) 0%, rgba(255, 255, 255, 0.04) 100%);
+    --theme-border: rgba(255, 255, 255, 0.12);
+    --theme-spotlight: #e2e8f0;
+    --theme-spotlight-2: #475569;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #07080e;
+}
+::-webkit-scrollbar-thumb {
+  background: #27272a;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3f3f46;
+}
+
+/* Glassmorphism helpers */
+.glass-panel {
+  background: rgba(12, 14, 22, 0.7);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.glass-panel-glow {
+  background: rgba(14, 16, 26, 0.8);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 8px 32px -8px rgba(0, 0, 0, 0.6);
+}
+
+.glass-dock {
+  background: rgba(10, 11, 18, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 10px 40px -10px rgba(0, 0, 0, 0.8), 0 0 1px 1px rgba(255, 255, 255, 0.05);
+}
+
+/* Futuristic background grids */
+.bg-grid-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+}
+
+.bg-dot-pattern {
+  background-size: 24px 24px;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+}
+
+/* Professional Accent Utilities */
+.text-theme-gradient {
+  background: var(--theme-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-theme {
+  color: var(--theme-primary);
+}
+
+.border-theme {
+  border-color: var(--theme-border);
+}
+
+.btn-theme-glow {
+  background: #ffffff;
+  color: #090a0f;
+  box-shadow: 0 4px 20px -2px rgba(255, 255, 255, 0.15);
+}
+
+.btn-theme-glow:hover {
+  background: #f1f5f9;
+}
+
+.nav-active-pill {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 0 16px -4px rgba(255, 255, 255, 0.12);
+}
+
+/* Print Protection: Prevent unauthorized printing and PDF downloads */
+@media print {
+  main, header, footer {
+    display: none !important;
+  }
+}
