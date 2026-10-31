@@ -1,0 +1,10 @@
+{
+  "buildCommand": "cd Portfolio-New && npm run build",
+  "outputDirectory": "Portfolio-New/dist",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
