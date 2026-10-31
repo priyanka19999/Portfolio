@@ -1,5 +1,9 @@
 # 💼PORTFOLIO
+<<<<<<< HEAD
 
+=======
+A Description About My Journey So Far..!
+>>>>>>> 99d5db55bd1b8d78ceff283b86697711757edb3e
 Welcome to my personal developer portfolio, a modern and high-performance web application designed to showcase my frontend engineering projects, professional experience, and technical capabilities. Built with React 19, Tailwind CSS, and Framer Motion, it features an executive dark aesthetic, fluid micro-interactions, and functional interactive project sandboxes.
 
 ## ✨ Features
